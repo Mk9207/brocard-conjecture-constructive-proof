@@ -1,0 +1,17 @@
+
+\section*{Lemma B1: Gap Bound Exclusion}
+
+Let \( n \geq 8 \). Then the difference \( |n! + 1 - m^2| > 1 \) for any integer \( m \in \mathbb{Z} \).
+
+\textbf{Proof.}
+Assume for contradiction that \( n! + 1 = m^2 \) for some \( n \geq 8 \). Then:
+\[
+m^2 - n! = 1
+\Rightarrow m^2 - 1 = n!
+\Rightarrow (m - 1)(m + 1) = n!
+\]
+
+Since \( n! \) is divisible by all integers from 2 to \( n \), the consecutive integers \( (m-1, m+1) \) must both divide \( n! \). But \( \gcd(m-1, m+1) = 2 \), so both factors must be less than or equal to \( n \). This fails to hold for \( n \geq 8 \) as \( m+1 > n \). Contradiction.
+
+Therefore, no such \( m \) exists.
+\qed
